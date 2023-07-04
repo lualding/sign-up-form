@@ -1,0 +1,128 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #181010;
+}
+
+h1, p{
+    font-size: medium;
+    font-weight: 400;
+}
+
+.h1-p > h1{
+    margin-bottom: 15px;
+}
+/* IMAGE */
+
+img{
+    width: 100px;
+    height: auto;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: #181010;
+  opacity: 0.5;
+  padding: 10px 0;
+}
+
+span{
+    font-size: 2rem;
+    font-family: cursive;
+}
+.one{
+    height: 100%;
+    background-image: url(images/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+  background-repeat: no-repeat;
+
+}
+/*form*/
+.two{
+    display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100vh;
+  background-color: white;
+  padding: 10px;
+  margin: 0 auto;
+
+}
+
+form{
+    background-color: #8D8B8B;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px lightblue;
+    color:black
+}
+
+
+fieldset {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1em;
+    box-sizing: border-box;
+    border: none;
+  
+    /* we create our grid */
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+  }
+
+  legend{
+    font-size: 1.5rem;
+  }
+
+  .first-last-name, .email-number, .pass{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  input {
+    font: 1.4em/1.5em "handwriting", cursive, sans-serif;
+  border: none;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  width: 80%;
+  background: white;
+}
+
+/* button */
+button{
+    border: none;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  width: 50%;
+  color: white;
+  font-size: 20px;
+  background: gray;
+}
+
+a{
+    text-decoration: none;
+}
+button > a{
+    color: white;
+}
