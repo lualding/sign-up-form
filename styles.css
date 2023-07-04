@@ -106,13 +106,24 @@ fieldset {
   border-radius: 5px;
   width: 80%;
   background: white;
+  box-sizing: border-box;
 }
 
-input:focus {
-  background: lightgray;
-  
+input:focus{
+    outline: none;
 }
 
+
+
+input[type=text]:focus {
+    outline: none;
+    border: 2px solid blue;
+  }
+
+  input[type=password]:focus {
+    outline: none;
+    border: 2px solid red;
+  }
 /* button */
 button{
     border: none;
