@@ -148,3 +148,37 @@ a{
 button > a{
     color:white;
 }
+
+
+@media screen and (max-width: 600px) {
+  
+  body{
+    grid-template-columns: 1fr;
+    background-color: aqua;
+    padding: 0;
+  }
+   .one{
+    display: none;
+  }
+
+  .two{
+    display: block;
+    margin: 10px 0;
+    background-color: inherit;
+  }
+
+  .first-last-name, .email-number, .pass{
+    grid-template-columns: 1fr;
+  }
+
+  form{
+    box-shadow: none;s
+  }
+
+  legend{
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 10px;
+    border-bottom: 2px solid black;
+  }
+}
